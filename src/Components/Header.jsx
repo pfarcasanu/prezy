@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import InvertedLogo from '../Static/inverted.png';
 
 const pages = ['Gift Guides'];
 
@@ -31,18 +32,26 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          <Box
+            component="img"
+            sx={{
+              height: 30,
+              width: 30,
+              mb: -0.8,
+              display: { xs: 'none', md: 'flex' },
+            }}
+            src={InvertedLogo}
+          />
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="/"
             style={{ flex: 1 }}
             sx={{
-              mr: 2,
+              ml: 1.2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.05rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -86,18 +95,26 @@ function Header() {
               ))}
             </Menu>
           </Box>
+          <Box
+            component="img"
+            sx={{
+              height: 25,
+              width: 25,
+              mb: -0.7,
+              display: { xs: 'flex', md: 'none' },
+            }}
+            src={InvertedLogo}
+          />
           <Typography
             variant="h5"
             noWrap
             component="a"
             href=""
             sx={{
-              mr: 2,
+              ml: 1,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.05rem',
               color: 'inherit',
               textDecoration: 'none',
             }}

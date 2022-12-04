@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -6,9 +7,10 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Img from '../Static/test.png';
 
-function Item() {
+// eslint-disable-next-line react/prop-types
+function Product({ title, description }) {
   return (
-    <Card sx={{ maxWidth: 375 }}>
+    <Card sx={{ minWidth: 300, maxWidth: 375 }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -18,11 +20,10 @@ function Item() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -30,4 +31,4 @@ function Item() {
   );
 }
 
-export default Item;
+export default Product;

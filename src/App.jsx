@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Components/Header';
 import Post from './Components/Post';
 
-const font = "'Tenor Sans', sans-serif";
+const font = "'Lora', serif";
 
 const theme = createTheme({
   typography: {
