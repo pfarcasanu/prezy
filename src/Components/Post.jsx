@@ -1,9 +1,12 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Masonry from 'react-responsive-masonry';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+// import { Stack } from '@mui/material';
 import Product from './Product';
 
 const products = [
@@ -62,8 +65,9 @@ const products = [
 function Post() {
   const theme = useTheme();
   const upSm = useMediaQuery(theme.breakpoints.up('sm'));
+  const upMd = useMediaQuery(theme.breakpoints.up('md'));
   const columnsCount = upSm ? 2 : 1;
-  const masonryWidth = upSm ? 800 : 400;
+  const masonryWidth = upMd ? 800 : upSm ? 575 : 325;
 
   return (
     <Box style={{ background: '#E7E7E7' }}>
@@ -113,21 +117,25 @@ function Post() {
         display="flex"
         justifyContent="center"
         alignItems="center"
+        flexDirection="column"
       >
-        <Box display="relative" sx={{ width: masonryWidth, p: 1 }}>
-          <Masonry columnsCount={columnsCount}>
-            {products.map((product, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Box key={index} sx={{ p: 1.5 }}>
-                <Product
-                  title={product.title}
-                  description={product.description}
-                  url={product.url}
-                />
-              </Box>
-            ))}
-          </Masonry>
-        </Box>
+        {
+          Array.from(Array(1).keys()).map((_, categoryIndex) => (
+            <Box key={categoryIndex} display="relative" sx={{ width: masonryWidth }}>
+              <Masonry columnsCount={columnsCount}>
+                {products.map((product, productIndex) => (
+                  <Box key={productIndex} sx={{ p: 1.5 }}>
+                    <Product
+                      title={product.title}
+                      description={product.description}
+                      url={product.url}
+                    />
+                  </Box>
+                ))}
+              </Masonry>
+            </Box>
+          ))
+        }
       </Box>
     </Box>
   );

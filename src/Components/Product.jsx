@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 // eslint-disable-next-line react/prop-types
 function Product({ title, description, url }) {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 380 }}>
+    <Card sx={{ minWidth: 200, maxWidth: 380 }}>
       <CardActionArea>
         <CardMedia
           component="img"
