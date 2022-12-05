@@ -78,9 +78,8 @@ function Post() {
       <Box
         display="flex"
         sx={{
-          flexGrow: 1,
-          pt: 2,
-          pb: 2,
+          pt: 1.5,
+          pb: 1.5,
           width: '100%',
           borderBottom: 0.5,
           borderColor: '#AFAFAF',
@@ -94,8 +93,7 @@ function Post() {
             variant="h5"
             align="center"
             sx={{
-              p: 0.5,
-              fontSize: 24,
+              fontSize: 28,
               fontWeight: 700,
             }}
           >
@@ -125,7 +123,12 @@ function Post() {
       >
         {
           categories.map((category, index) => (
-            <ProductCategory key={index} title={category.title} products={category.products} />
+            <ProductCategory
+              key={index}
+              title={category.title}
+              products={category.products}
+              isLast={index === categories.length}
+            />
           ))
         }
       </Box>
