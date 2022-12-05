@@ -5,24 +5,27 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import Img from '../Static/test.png';
 
 // eslint-disable-next-line react/prop-types
-function Product({ title, description }) {
+function Product({ title, description, url }) {
   return (
-    <Card sx={{ minWidth: 300, maxWidth: 375 }}>
+    <Card sx={{ minWidth: 275, maxWidth: 380 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          src={Img}
+          src={url}
           alt="test"
+          sx={{ minHeight: 150, maxHeight: 450 }}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h6"
+            sx={{ fontWeight: 600, fontSize: 18 }}
+          >
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="caption" color="text.secondary">
             {description}
           </Typography>
         </CardContent>

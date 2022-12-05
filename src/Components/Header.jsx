@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import InvertedLogo from '../Static/inverted.png';
 
-const pages = ['Gift Guides'];
+const pages = ['Gift Lists'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

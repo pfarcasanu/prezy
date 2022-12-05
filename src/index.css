@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+.masonryContainer {
+  margin: 0 auto; /* this is the css that keeps the container centered in page */
+}
