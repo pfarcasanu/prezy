@@ -15,7 +15,7 @@ function Product({ title, description, url }) {
           component="img"
           src={url}
           alt="test"
-          sx={{ minHeight: 150, maxHeight: 450 }}
+          sx={{ minHeight: 150, maxHeight: 300 }}
         />
         <CardContent>
           <Typography
