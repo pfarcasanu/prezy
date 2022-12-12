@@ -22,14 +22,14 @@ function ProductCategory({ title, products, isLast }) {
           variant="h5"
           sx={{
             fontWeight: 600,
-            fontSize: 18,
-            textTransform: 'uppercase',
+            fontSize: 22,
             p: 1.5,
-            pt: 2,
-            pb: 2,
+            pt: 2.5,
+            pb: 2.5,
           }}
         >
           {title}
+          .
         </Typography>
         <Masonry columnsCount={columnsCount}>
           {products.map((product, index) => (
@@ -37,13 +37,13 @@ function ProductCategory({ title, products, isLast }) {
             <Box key={index} sx={{ p: 1.5, pt: 0 }}>
               <Product
                 title={product.title}
+                imgUrl={product.imgUrl}
                 description={product.description}
-                url={product.url}
               />
             </Box>
           ))}
         </Masonry>
-        <Divider sx={{ ml: 1.5, mr: 1.5, mt: 2 }} />
+        {isLast ?? <Divider sx={{ ml: 1.5, mr: 1.5, mt: 2 }} />}
       </Box>
     </Box>
   );

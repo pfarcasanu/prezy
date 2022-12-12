@@ -7,13 +7,13 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 // eslint-disable-next-line react/prop-types
-function Product({ title, description, url }) {
+function Product({ title, description, imgUrl }) {
   return (
     <Card sx={{ minWidth: 200, maxWidth: 380 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          src={url}
+          src={imgUrl}
           alt="test"
           sx={{ minHeight: 150, maxHeight: 300 }}
         />
