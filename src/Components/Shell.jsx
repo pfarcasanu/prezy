@@ -1,7 +1,6 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from './Components/Header';
-import Post from './Components/Post';
+import Header from './Header';
 
 const font = "'Lora', serif";
 
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Header />
-        <Post />
       </ThemeProvider>
     </div>
   );
