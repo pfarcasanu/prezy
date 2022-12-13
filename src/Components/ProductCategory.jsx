@@ -17,15 +17,14 @@ function ProductCategory({ title, products }) {
 
   return (
     <Box display="relative" sx={{ width: masonryWidth }}>
-      {/* <Divider sx={{ m: 1.5, mt: 2, borderBottomWidth: 1.2 }} /> */}
-      <Box sx={{ p: 1.5, pt: 2, pb: 1.8 }}>
-        <Paper sx={{ backgroundColor: '#202020' }} elevation={0}>
+      <Box sx={{ p: 1.5, pt: 2 }}>
+        <Paper sx={{ backgroundColor: '#303030' }} elevation={0}>
           <Typography
             sx={{
-              fontWeight: 500,
+              fontWeight: 600,
               fontSize: 18,
               p: 1,
-              color: 'white',
+              color: '#FFFFFF',
             }}
             textAlign="center"
           >
@@ -33,7 +32,6 @@ function ProductCategory({ title, products }) {
           </Typography>
         </Paper>
       </Box>
-      {/* <Divider sx={{ m: 1.5, borderBottomWidth: 1.2 }} /> */}
       <Masonry columnsCount={columnsCount}>
         {products.map((product, index) => (
           // eslint-disable-next-line react/no-array-index-key
