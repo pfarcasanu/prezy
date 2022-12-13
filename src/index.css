@@ -3,3 +3,16 @@
 .masonryContainer {
   margin: 0 auto; /* this is the css that keeps the container centered in page */
 }
+
+.text-divider {
+  display: flex;
+  align-items: center;
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 2px;
+  background-color: #202020;
+  flex-grow: 1;
+}
