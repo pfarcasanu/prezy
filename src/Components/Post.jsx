@@ -73,6 +73,7 @@ const categories = [
 ];
 
 function Post() {
+  console.log('build post');
   return (
     <Box style={{ background: '#E7E7E7' }}>
       <Box

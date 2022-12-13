@@ -7,19 +7,17 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Post from './Components/Post';
-import Shell from './Components/Shell';
+import App from './Components/App';
 import './index.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Shell />,
-    children: [
-      {
-        path: 'post',
-        element: <Post />,
-      },
-    ],
+    element: <App />,
+  },
+  {
+    path: 'post',
+    element: <Post />,
   },
 ]);
 
