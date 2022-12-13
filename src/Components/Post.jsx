@@ -73,7 +73,6 @@ const categories = [
 ];
 
 function Post() {
-  console.log('build post');
   return (
     <Box style={{ background: '#E7E7E7' }}>
       <Box
@@ -128,7 +127,6 @@ function Post() {
               key={index}
               title={category.title}
               products={category.products}
-              isLast={index === categories.length}
             />
           ))
         }

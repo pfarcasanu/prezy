@@ -8,7 +8,7 @@ import { Typography, Divider } from '@mui/material';
 import Product from './Product';
 
 // eslint-disable-next-line no-unused-vars
-function ProductCategory({ title, products, isLast }) {
+function ProductCategory({ title, products }) {
   const theme = useTheme();
   const upSm = useMediaQuery(theme.breakpoints.up('sm'));
   const upMd = useMediaQuery(theme.breakpoints.up('md'));
@@ -18,19 +18,17 @@ function ProductCategory({ title, products, isLast }) {
   return (
     <Box>
       <Box display="relative" sx={{ width: masonryWidth }}>
+        <Divider sx={{ m: 1.5, mt: 2, borderBottomWidth: 1.2 }} />
         <Typography
-          variant="h5"
           sx={{
-            fontWeight: 600,
-            fontSize: 22,
-            p: 1.5,
-            pt: 2.5,
-            pb: 2.5,
+            fontWeight: 500,
+            fontSize: 18,
           }}
+          textAlign="center"
         >
           {title}
-          .
         </Typography>
+        <Divider sx={{ m: 1.5, borderBottomWidth: 1.2 }} />
         <Masonry columnsCount={columnsCount}>
           {products.map((product, index) => (
           // eslint-disable-next-line react/no-array-index-key
@@ -43,7 +41,6 @@ function ProductCategory({ title, products, isLast }) {
             </Box>
           ))}
         </Masonry>
-        {isLast ?? <Divider sx={{ ml: 1.5, mr: 1.5, mt: 2 }} />}
       </Box>
     </Box>
   );
