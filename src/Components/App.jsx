@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
-import Post from './Post';
+import PostPage from './Posts/PostPage';
 
 const font = "'Lora', serif";
 const theme = createTheme({
@@ -28,15 +28,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<div>harvard is home.</div>} />
-            <Route path="post" element={<Post />} />
+            <Route path="post" element={<PostPage />} />
             <Route path="*" element={<div>Error, no match.</div>} />
           </Route>
         </Routes>
       </ThemeProvider>
-      {/* Routes nest inside one another. Nested route paths build upon
-            parent route paths, and nested route elements render inside
-            parent route elements. See the note about <Outlet> below. */}
-
     </div>
   );
 }

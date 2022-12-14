@@ -13,12 +13,12 @@ function ProductCategory({ title, products }) {
   const upSm = useMediaQuery(theme.breakpoints.up('sm'));
   const upMd = useMediaQuery(theme.breakpoints.up('md'));
   const columnsCount = upSm ? 2 : 1;
-  const masonryWidth = upMd ? 800 : upSm ? 575 : 325;
+  const masonryWidth = upMd ? 800 : upSm ? 550 : 350;
 
   return (
     <Box display="relative" sx={{ width: masonryWidth }}>
-      <Box sx={{ p: 1.5, pt: 2 }}>
-        <Paper sx={{ backgroundColor: '#303030' }} elevation={0}>
+      <Box sx={{ p: 1.5 }}>
+        <Paper sx={{ backgroundColor: '#373737' }} elevation={0}>
           <Typography
             sx={{
               fontWeight: 600,
@@ -28,7 +28,7 @@ function ProductCategory({ title, products }) {
             }}
             textAlign="center"
           >
-            {`${title}.`}
+            { title }
           </Typography>
         </Paper>
       </Box>

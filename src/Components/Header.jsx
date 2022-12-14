@@ -28,7 +28,7 @@ function Header() {
     <AppBar
       position="relative"
       style={{ background: '#202020' }}
-      elevation={3}
+      elevation={1}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
