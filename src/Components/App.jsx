@@ -9,6 +9,16 @@ const theme = createTheme({
   typography: {
     fontFamily: font,
   },
+  palette: {
+    mediumGray: {
+      main: '#373737',
+      darker: '#272727',
+      contrastText: '#fff',
+    },
+  },
+  shape: {
+    borderRadius: 2,
+  },
 });
 
 function Layout() {
