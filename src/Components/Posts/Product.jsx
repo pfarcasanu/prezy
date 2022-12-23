@@ -13,8 +13,7 @@ function Product({ title, description, imgUrl }) {
       className="customCard"
       sx={{
         minWidth: 200,
-        maxWidth: 380,
-        borderRadius: 10,
+        borderRadius: 2,
         backgroundColor: '#FFFFFF',
       }}
       elevation={0}
@@ -50,7 +49,7 @@ function Product({ title, description, imgUrl }) {
             disableElevation
             sx={{
               width: 110,
-              borderRadius: 5,
+              borderRadius: 2,
             }}
           >
             Shop Now

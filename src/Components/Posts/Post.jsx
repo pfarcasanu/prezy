@@ -3,12 +3,12 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useParams } from 'react-router-dom';
-import ProductCategory from './ProductCategory';
-import content from '../../Static/content.json';
+import Category from './Category';
+import posts from '../../Static/posts.json';
 
 function Post() {
   const { slug } = useParams();
-  const post = content[slug];
+  const post = posts[slug];
 
   return (
     <Box style={{ background: '#E7E7E7' }}>
@@ -62,7 +62,7 @@ function Post() {
       >
         {
           post.categories.map((category, index) => (
-            <ProductCategory
+            <Category
               key={index}
               title={category.title}
               products={category.products}

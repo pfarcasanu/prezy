@@ -4,7 +4,8 @@ import {
 } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
-import PostPage from './Posts/PostPage';
+import Home from './Home/Home';
+import Post from './Posts/Post';
 
 const font = "'Lora', serif";
 const theme = createTheme({
@@ -39,8 +40,8 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<div>harvard is home.</div>} />
-            <Route path="post/:slug" element={<PostPage />} />
+            <Route index element={<Home />} />
+            <Route path="posts/:slug" element={<Post />} />
             <Route path="*" element={<div>Error, no match.</div>} />
           </Route>
         </Routes>

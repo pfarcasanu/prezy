@@ -112,7 +112,7 @@ function Header() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               ml: 1,
               display: { xs: 'flex', md: 'none' },

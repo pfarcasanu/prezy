@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 
+/* Masonry */
 .masonryContainer {
   margin: 0 auto; /* this is the css that keeps the container centered in page */
 }
 
-.text-divider {
-  display: flex;
-  align-items: center;
-}
-
-.text-divider::before,
-.text-divider::after {
-  content: '';
-  height: 2px;
-  background-color: #202020;
-  flex-grow: 1;
-}
-
+/* No-Style Links */
 a.nostyle:link {
   text-decoration: inherit;
   color: inherit;
@@ -26,5 +15,10 @@ a.nostyle:link {
 a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
+  cursor: pointer;
+}
+
+/* Hoverable Non-Links */
+.hoverable {
   cursor: pointer;
 }
