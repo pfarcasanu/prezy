@@ -32,16 +32,18 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              height: 30,
-              width: 30,
-              mb: -0.8,
-              display: { xs: 'none', md: 'flex' },
-            }}
-            src={InvertedLogo}
-          />
+          <a href="/">
+            <Box
+              component="img"
+              sx={{
+                height: 30,
+                width: 30,
+                mb: -0.8,
+                display: { xs: 'none', md: 'flex' },
+              }}
+              src={InvertedLogo}
+            />
+          </a>
           <Typography
             variant="h5"
             noWrap
@@ -58,7 +60,6 @@ function Header() {
           >
             prezy
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -90,7 +91,9 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <a className="nostyle" href="/">
+                    <Typography textAlign="center">{page}</Typography>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -123,13 +126,15 @@ function Header() {
           </Typography>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <a className="nostyle" href="/">
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  {page}
+                </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>

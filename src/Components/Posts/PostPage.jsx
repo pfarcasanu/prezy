@@ -25,7 +25,10 @@ function Post() {
         justifyContent="center"
         alignItems="center"
       >
-        <Box sx={{ flexGrow: 1, pl: 1, pr: 1 }} maxWidth="400px">
+        <Box sx={{
+          flexGrow: 1, pl: 3, pr: 3, maxWidth: 500,
+        }}
+        >
           <Typography
             variant="h5"
             align="center"
@@ -42,7 +45,7 @@ function Post() {
             sx={{
               p: 0.5,
               fontWeight: 200,
-              fontSize: 11,
+              fontSize: 12,
               lineHeight: 1.4,
               color: 'text.secondary',
             }}
