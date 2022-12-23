@@ -13,7 +13,7 @@ function ProductCategory({ title, products }) {
   const upSm = useMediaQuery(theme.breakpoints.up('sm'));
   const upMd = useMediaQuery(theme.breakpoints.up('md'));
   const columnsCount = upSm ? 2 : 1;
-  const masonryWidth = upMd ? 800 : upSm ? 550 : 350;
+  const masonryWidth = upMd ? 820 : upSm ? 550 : 350;
 
   return (
     <Box display="relative" sx={{ width: masonryWidth }}>

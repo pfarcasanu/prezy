@@ -14,7 +14,7 @@ function Product({ title, description, imgUrl }) {
       sx={{
         minWidth: 200,
         maxWidth: 380,
-        borderRadius: 7,
+        borderRadius: 10,
         backgroundColor: '#FFFFFF',
       }}
       elevation={0}
@@ -49,8 +49,8 @@ function Product({ title, description, imgUrl }) {
             variant="contained"
             disableElevation
             sx={{
-              width: 150,
-              borderRadius: 3,
+              width: 110,
+              borderRadius: 5,
             }}
           >
             Shop Now

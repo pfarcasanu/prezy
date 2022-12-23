@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import {
+  Routes, Route, Outlet,
+} from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import PostPage from './Posts/PostPage';
@@ -38,7 +40,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<div>harvard is home.</div>} />
-            <Route path="post" element={<PostPage />} />
+            <Route path="post/:slug" element={<PostPage />} />
             <Route path="*" element={<div>Error, no match.</div>} />
           </Route>
         </Routes>
