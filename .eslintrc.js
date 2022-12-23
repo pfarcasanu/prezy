@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'json-format',
   ],
   rules: {
     'import/no-named-as-default': 0,
