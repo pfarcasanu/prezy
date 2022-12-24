@@ -17,12 +17,9 @@ function Post() {
   };
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box>
       <HighlightedPost
-        slug={highlighted.slug}
-        title={highlighted.title}
-        description={highlighted.description}
-        imgUrl={highlighted.imgUrl}
+        post={highlighted}
         navigateTo={navigateTo}
       />
       <Previews

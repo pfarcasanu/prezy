@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 
 export default function HighlightedPost({
-  title, description, imgUrl, slug, navigateTo,
+  post, navigateTo,
 }) {
   const theme = useTheme();
   const upMd = useMediaQuery(theme.breakpoints.up('md'));
@@ -17,7 +17,7 @@ export default function HighlightedPost({
     <Card
       sx={{
         display: upMd ? 'flex' : 'relative',
-        p: upMd ? 3 : 1,
+        p: upMd ? 5 : 3,
       }}
       elevation={0}
     >
@@ -29,9 +29,9 @@ export default function HighlightedPost({
         <Box sx={{ width: upMd ? '500px' : '100%' }}>
           <CardMedia
             component="img"
-            image={imgUrl}
-            alt={title}
-            onClick={() => navigateTo(slug)}
+            image={post.imgUrl}
+            alt={post.title}
+            onClick={() => navigateTo(post.slug)}
             className="hoverable"
           />
         </Box>
@@ -44,18 +44,22 @@ export default function HighlightedPost({
         <CardContent
           className="hoverable"
           sx={{ width: upMd ? '80%' : '100%' }}
-          onClick={() => navigateTo(slug)}
+          onClick={() => navigateTo(post.slug)}
         >
-          <Typography component="div" variant="h5" sx={{ fontWeight: 600 }}>
-            {title}
+          <Typography variant="h5" sx={{ fontWeight: 600 }}>
+            {post.title}
+          </Typography>
+          <Typography
+            variant="caption"
+            color="text.secondary"
+          >
+            {post.date}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
-            component="div"
-            sx={{ pt: 1 }}
           >
-            {description}
+            {post.description}
           </Typography>
         </CardContent>
       </Box>

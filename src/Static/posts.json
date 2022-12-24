@@ -2,6 +2,7 @@
   "sweet-gifts-for-bakers": {
     "slug": "sweet-gifts-for-bakers",
     "title": "Sweet Gifts for Bakers",
+    "date": "December 5, 2022",
     "imgUrl": "https://res.cloudinary.com/dhc72wrqp/image/upload/v1671826054/prezy-prototype/gifts-for-bakers/Gifts-for-Bakers_zplkal.png",
     "description": "Looking for the perfect gift for the baker in your life? We've scoured the internet for unique gifts ranging from practical to trendy.",
     "categories": [
@@ -74,6 +75,7 @@
   },
   "gifts-for-college-students": {
     "slug": "gifts-for-college-students",
+    "date": "December 12, 2022",
     "title": "44 Gifts for College Students",
     "imgUrl": "https://res.cloudinary.com/dhc72wrqp/image/upload/v1671826119/prezy-prototype/gifts-for-college-students/Gifts-for-College-Students_zkkolk.png",
     "description": "Between rigorous classes, moving away from home, and meeting new people, college life can be pretty crazy. In all of the chaos, a thoughtful present from a loved one can mean the world. Check out this list for 44 gifts to make your favorite college student feel more at home, from a cozy pajama set to a sunrise alarm clock.",
@@ -122,6 +124,7 @@
   },
   "gifts-for-book-lovers": {
     "slug": "gifts-for-book-lovers",
+    "date": "December 17, 2022",
     "title": "26 Novel Gifts for the Bookworm in Your Life",
     "description": "Want to find a gift to “wow” the chronic reader in your life? Instead of walking into a bookstore and choosing the first selection on the “Best-Seller” shelf, start with our hand-curated list.",
     "imgUrl": "https://res.cloudinary.com/dhc72wrqp/image/upload/v1671833004/prezy-prototype/gifts-for-book-lovers/Gifts-for-Book-Lovers_yibups.png",
@@ -129,6 +132,7 @@
   },
   "gifts-for-new-homeowners": {
     "slug": "gifts-for-new-homeowners",
+    "date": "December 20, 2022",
     "title": "30 Housewarming Gifts for the First-Time Homeowner",
     "description": "Shopping for new homeowners can be tricky. In addition to giving a gift from the heart, you also want it to stand out from the countless bottles of wine and houseplants they’re bound to receive. Luckily, we’re here to help. We’ve constructed a list of the internet’s most unique and personal gifts, from a custom welcome mat to a luxurious self care spa set.",
     "imgUrl": "https://res.cloudinary.com/dhc72wrqp/image/upload/v1671833177/prezy-prototype/gifts-for-new-homeowners/Gifts-for-New-Homeowners_s9dp3n.png",
@@ -136,8 +140,9 @@
   },
   "gifts-for-beer-lovers": {
     "slug": "gifts-for-beer-lovers",
+    "date": "December 23, 2022",
     "title": "21 One-of-a-Kind Gifts for the Snobbiest Beer Snob",
-    "description": "Trying to find an unforgettable present for the beer snob in your life? There comes a time when you’ve gifted one too many six-packs and treated one too many pub nights. That’s why we put together a list of standout gifts to satisfy any beer lover, from bottle opener sandals to a drink dispenser to converts a can to a draft.",
+    "description": "Trying to find an unforgettable present for the beer snob in your life? We put together a list of standout gifts to satisfy any beer lover, from bottle opener sandals to a drink dispenser to converts a can to a draft.",
     "imgUrl": "https://res.cloudinary.com/dhc72wrqp/image/upload/v1671833190/prezy-prototype/gifts-for-beer-lovers/Gifts-for-Beer-Lovers_narxp4.png",
     "categories": []
   }
